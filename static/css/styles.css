@@ -1,0 +1,136 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+/* Search container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#search-input {
+  width: 300px;
+  padding: 12px;
+  font-size: 1em;
+  border: 2px solid #2980b9;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#search-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px #3498db;
+}
+
+#search-button {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #2980b9;
+  color: #fff;
+  border: 2px solid #2980b9;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #3498db;
+}
+
+/* Image section */
+.image-section {
+  text-align: center;
+  margin: 30px 0 60px 0;
+}
+
+.image-section img {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Loading indicator */
+.loading {
+  display: none;
+  text-align: center;
+  font-size: 1.5em;
+  color: #2980b9;
+}
+
+/* Results section */
+.results {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#word-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+#pronounce-button {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.part-of-speech {
+  margin-bottom: 20px;
+}
+
+.part-of-speech h3 {
+  text-transform: capitalize;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.part-of-speech p {
+  margin-bottom: 5px;
+}
+
+/* Error Message */
+.error-message {
+  margin-top: 20px;
+  text-align: center;
+  color: red;
+  font-size: 1.2em;
+}

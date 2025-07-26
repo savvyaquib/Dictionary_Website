@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LexiconHub</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" />
+</head>
+<body>
+  <header>
+    <a href="{{ url_for('index') }}"  style="text-decoration:none"><h1>LexiconHub</h1></a>
+
+    <form id="search-form" class="search-container">
+      <input type="text" id="search-input" placeholder="Search any word..." required />
+      <button type="submit" id="search-button">Search</button>
+    </form>
+
+    <p class="tagline">Unlock the Power of Words</p>
+
+    <section id="image-section" class="image-section">
+      <img src="https://www.dictionary.com/e/wp-content/uploads/2023/08/20230901_unboxing_1920x1080.jpg" alt="Dictionary Illustration" />
+    </section>
+  </header>
+
+  <main>
+    <div id="loading" class="loading">Loading...</div>
+
+    <section class="results" id="results" style="display:none;">
+      <h2 id="word-title"></h2>
+      <button id="pronounce-button" style="display:none;">🔊 Pronounce</button>
+
+      <div id="meaning-container"></div>
+    </section>
+
+    <div id="error-message" class="error-message" style="display:none;">
+      Word not found. Please try another word.
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
