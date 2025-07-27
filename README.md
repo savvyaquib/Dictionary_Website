@@ -10,14 +10,6 @@ LexiconHub is a modern, lightweight dictionary web app designed to help users ex
 - 🔁 **Synonyms & Antonyms** — Understand deeper meanings and relationships.
 - 💡 **Minimal UI** — Clean, responsive interface using Flask and HTML/CSS.
 
-## 🖼️ Screenshots
-
-### Home Page
-![LexiconHub Home](./assets/home.png)
-
-### Word Result Page
-![LexiconHub Result](./assets/result.png)
-
 ## ⚙️ Tech Stack
 
 | Technology | Description               |
