@@ -33,6 +33,9 @@ LexiconHub is a modern, lightweight dictionary web app designed to help users ex
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/lexiconhub.git
+```
+
+```bash
 cd lexiconhub
 ```
 
